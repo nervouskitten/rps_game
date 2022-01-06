@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h3 class="header">
+            ROCK PAPER SCISSORS
+        </h3>
+    </header>
+    <div class="score-container">
+        <h2></h2>
+        <div class="score-message">
+            Start the game by selecting a button
+        </div>
+        <div class="scoreboard">
+            <div class="scorebox">
+                <p class="score" id="playerScoreId">Player: 0</p>
+            </div>
+            <div class="scorebox">
+                <p class="score" id="computerScoreId">Computer: 0</p>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="btn" id="btnRock">
+            <div>🥌</div>
+        </button>
+        <button class="btn" id="btnPaper">
+            <div>📄</div>
+        </button>
+        <button class="btn" id="btnScissors">
+            <div>✂️</div>
+        </button>
+    </div>
+    <div class="modal-bg">
+        <div class="modal">
+            <p>Game Over! </p>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+    <script src="js-file.js"></script>
+</body>
+</html>
+
+

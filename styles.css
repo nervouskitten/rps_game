@@ -1,0 +1,97 @@
+:root {
+    --primary-light: #ddd;
+    --primary-dark: #222831;
+    --secondary-dark: #393e46;
+    --secondary-dark-hover: #4a4f57;
+    --secondary-dark-active: #5b5f68;
+    --header: #111720;
+    --primary-yellow: #fac650;
+  }
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--primary-yellow);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.score-message{
+    display: flex;
+    justify-content: center;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+.btn {
+    font-size: 50px;
+    color: #ddd;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover{
+    background: #5b5f68;
+}
+
+.modal-bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background-color: #ddd;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    color: #111720;
+}
+
+#restart:hover{
+    background: #5b5f68;
+}
